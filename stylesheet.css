@@ -4,15 +4,119 @@
 // gameboard with a track around the outside, four corner spaces and four home paths leading to a central end space. The most popular Parcheesi boards in America have 68 spaces around the edge of the board, 12 of which are darkened safe spaces. Each corner of the board contains one player's nest, or starting area. 
 //two dice in center of screen that changes based on the numbers rolled with each turn? turns the color of the player
 
-//TO MAKE GRID
-
 <style>
 
+#container {
+  display: grid;
+  grid-template-areas:
+    "bluenest bluenest bluesafety yellownest yellownest"
+    "redsafety redsafety home yellowsafety yellowsafety"
+    "rednest rednest peachsafety peachnest peachnest";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.bluenest {
+  display: grid;
+  grid-area: bluenest;
+  color: red;
+  height: 240px;
+  width: 240px;
+}
+
+.bluesafety {
+  display: grid;
+  grid-area: bluesafety;
+  color: green;
+  height: 240px;
+  width: 240px;
+
+}
+
+.yellownest {
+  display: grid;
+  grid-area: yellownest;
+  color: yellow;
+  height: 240px;
+  width: 240px;
+}
+
+.redsafety {
+  display: grid;
+  grid-area: bluenest;
+  color: red;
+  height: 240px;
+  width: 240px;
+}
+
+.home {
+  display: grid;
+  grid-area: bluesafety;
+  color: green;
+  height: 240px;
+  width: 240px;
+
+}
+
+.yellowsafety {
+  display: grid;
+  grid-area: yellownest;
+  color: yellow;
+  height: 240px;
+  width: 240px;
+}
+
+.rednest {
+  display: grid;
+  grid-area: bluenest;
+  color: red;
+  height: 240px;
+  width: 240px;
+}
+
+.peachsafety {
+  display: grid;
+  grid-area: bluesafety;
+  color: green;
+  height: 240px;
+  width: 240px;
+
+}
+
+.peachnest {
+  display: grid;
+  grid-area: yellownest;
+  color: yellow;
+  height: 240px;
+  width: 240px;
+}
+/* #board {
+  display: flex;
+  justify-items: center;
+  width: 95%;
+} */
+
+.heroimage {
+  display: flexbox;
+  background-image: url("images/board1.png");
+  background-color: #f1ede2; 
+  height: 1200px;
+  width: 1200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item {
+  display: flex;
+  color: red;
+}
 
 
+body {
+  background-color: #f1ede2;
 
-
-
-
+}
 
 </style>

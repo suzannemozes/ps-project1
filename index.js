@@ -1,21 +1,4 @@
-
-  const container = document.getElementById("container");
-  let rows 
-  let columns
-
-  function makeRows(rows, cols) {
-    container.style.setProperty('--grid-rows', rows);
-    container.style.setProperty('--grid-cols', cols);
-    for (c = 0; c < (rows * cols); c++) {
-      let cell = document.createElement("div");
-      cell.innerText = (c + 1);
-      container.appendChild(cell).className = "grid-item";
-    };
-  };
-  
-  makeRows(16, 16);
-  
-  // Opening line to tell player to roll dice and the  player with the lowest roll goes first.
+// Opening line to tell player to roll dice and the  player with the lowest roll goes first.
 // Dice start at 00
 // Let player pick color and computer takes other
 
@@ -31,7 +14,7 @@ const diceB = ["1", "2", "3", "4", "5", "6"]
 //   diceB = ["1", "2", "3", "4", "5", "6"]
 // ] 
 
-
+///
 function game(){ //LOGIC KEEP ALL PLAY INSIDE GAME FUNCTION WITH NESTED ARRAY / OBJECTS B/C BOTH NEED TO HAVE THE SAME REFERENCE TYPE AKA ROOT??
 
   function rollDie(){
