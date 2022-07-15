@@ -1,117 +1,202 @@
-// two dice
+/* // two dice
 // two shaking cups?
 // // Each player positions their four single colored pieces in their respective starting nest,  which move to the colored section to the left of the nest
 // gameboard with a track around the outside, four corner spaces and four home paths leading to a central end space. The most popular Parcheesi boards in America have 68 spaces around the edge of the board, 12 of which are darkened safe spaces. Each corner of the board contains one player's nest, or starting area. 
-//two dice in center of screen that changes based on the numbers rolled with each turn? turns the color of the player
-
-<style>
+//two dice in center of screen that changes based on the numbers rolled with each turn? turns the color of the player */
 
 #container {
   display: grid;
+  grid-template-columns: 6fr 1fr 1fr 1fr 6fr;
+  grid-template-rows: 6fr 1fr 1fr 1fr 6fr; 
   grid-template-areas:
-    "bluenest bluenest bluesafety yellownest yellownest"
-    "redsafety redsafety home yellowsafety yellowsafety"
-    "rednest rednest peachsafety peachnest peachnest";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+    "bluenest    bluepath        safetyzone     yellowpath        yellownest"
+    ".           bluepad      .              yellowpad    . "
+    ".           .            home           .            ."
+    ".           .            .              .            ."
+    "rednest     .            .              .            peachnest";
+  background-image: url("images/board1.png");
+  background-color: #f1ede2; 
+  height: 800px;
+  width: 800px;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+
+#container > .bluenest{
+  grid-area: bluenest;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+#container > .bluepath{
+  grid-area: bluepath;
+  margin-top: 15px;
+
+}
+
+#container > .safetyzone{
+  grid-area: safetyzone;
+  margin-top: 15px;
+}
+
+#container > .yellowpath{
+  grid-area: yellowpath;
+  margin-top: 15px;
+}
+
+#container > .yellownest{
+  grid-area: yellownest;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+#container > .peachnest{
+  grid-area: peachnest;
+  margin: 15px;
+}
+
+#container > .rednest{
+  grid-area: rednest;
+  margin: 15px;
+  background-color: black;
+}
+
+#container > .home{
+  grid-area: home;
+  padding: 70%;
+  border: 5px solid black;
+}
+
+#container > .yellowpad{
+  grid-area: yellowpad;
+  margin: 10%;
+}
+
+#container > .bluepad{
+  grid-area: bluepad;
+  margin: 10%;
+}
+
+.bluepath > .path1{
+  grid-area: bluepath;
+}
+
+.bluepath > .path2{
+  grid-area: bluepath;
+}
+
+.bluepath > .path3{
+  grid-area: bluepath;
+}
+
+.bluepath > .path4{
+  grid-area: bluepath;
+}
+
+.bluepath > .path5{
+  grid-area: bluepath;
+}
+
+.bluepath > .path6{
+  grid-area: bluepath;
 }
 
 .bluenest {
   display: grid;
   grid-area: bluenest;
-  color: red;
-  height: 240px;
-  width: 240px;
+  background-color: purple;
 }
 
-.bluesafety {
+.bluepath {
   display: grid;
-  grid-area: bluesafety;
-  color: green;
-  height: 240px;
-  width: 240px;
+  grid-area: bluepath;
+  /* background-color: gray; */
+}
 
+.yellowpath {
+  display: grid;
+  grid-area: yellowpath;
+  /* background-color: gray; */
+}
+
+.safetyzone {
+  display: grid;
+  grid-area: safetyzone;
+  height: 75%
+  /* background-color: green; */
 }
 
 .yellownest {
   display: grid;
   grid-area: yellownest;
-  color: yellow;
-  height: 240px;
-  width: 240px;
-}
-
-.redsafety {
-  display: grid;
-  grid-area: bluenest;
-  color: red;
-  height: 240px;
-  width: 240px;
+  /* background-color: yellow; */
 }
 
 .home {
-  display: grid;
-  grid-area: bluesafety;
-  color: green;
-  height: 240px;
-  width: 240px;
-
-}
-
-.yellowsafety {
-  display: grid;
-  grid-area: yellownest;
-  color: yellow;
-  height: 240px;
-  width: 240px;
+  display: flex;
+  grid-area: home;
+  /* background-color: orange; */
 }
 
 .rednest {
   display: grid;
-  grid-area: bluenest;
-  color: red;
-  height: 240px;
-  width: 240px;
-}
-
-.peachsafety {
-  display: grid;
-  grid-area: bluesafety;
-  color: green;
-  height: 240px;
-  width: 240px;
-
+  grid-area: redness;
+  /* background-color: purple; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3em;
 }
 
 .peachnest {
   display: grid;
   grid-area: yellownest;
-  color: yellow;
-  height: 240px;
-  width: 240px;
+  /* background-color: yellow; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3em;
 }
-/* #board {
-  display: flex;
-  justify-items: center;
-  width: 95%;
-} */
 
-.heroimage {
-  display: flexbox;
+.bluepad {
+  display: grid;
+  grid-area: bluepad;
+  /* background-color: orange; */
+}
+
+.yellowpad {
+  display: grid;
+  grid-area: yellowpad;
+  /* background-color: black; */
+}
+
+.path1box {
+  display: flex;
+  height: 47px;
+  width: 47px;
+  padding: 10px;
+  border: 2px red;
+}
+
+.path2box{
+  /* display: flex; */
+  height: 47px;
+  width: 47px;
+  margin: 10px;
+  border: 2px bold line black;
+}
+.sf {
+  /* height: auto; */
+  border: solid red;
+}
+
+/* .heroimage {
+  display: grid;
   background-image: url("images/board1.png");
   background-color: #f1ede2; 
-  height: 1200px;
-  width: 1200px;
+  height: 800px;
+  width: 800px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.item {
-  display: flex;
-  color: red;
-}
+} */
 
 
 body {
@@ -119,4 +204,27 @@ body {
 
 }
 
-</style>
+
+/* original attempt at 15x15 grid but css won't go around L-shapes */
+/* #container {
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr 1fr 6fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-areas:
+    "bluenest bluenest bluenest bluenest bluenest bluenest    path       path           path      yellownest yellownest yellownest yellownest yellownest yellownest"
+    "bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
+    "bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
+    "bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
+    "bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
+    "bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
+
+    "path     path      path    path     path     path        path           .          path      path       path        path       path       path       path"
+    "path     redsafety redsafety redsafety redsafety redsafety    .        home         .     yellowsafety yellowsafety yellowsafety yellowsafety yellowsafety path"
+
+    "path     path      path    path     path     path        path              .       path        path       path       path       path       path       path"
+    
+    "rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"
+    "rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"
+    "rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"    "rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"
+    "rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"
+    "rednest rednest rednest rednest rednest rednest          path       path            path      peachnest peachnest peachnest peachnest peachnest peachnest"; */
