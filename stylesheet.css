@@ -237,10 +237,9 @@
 
 body {
   background-color: #A8A08D;
-
 }
 
-//dice
+/* //dice */
 .wrapper {
   width: 70%;
   margin: auto;
@@ -266,6 +265,7 @@ p {
 
 img {
   width: 320px;
+  border: 2px solid red;
 }
 /* original attempt at 15x15 grid but css won't go around L-shapes */
 /* #container {
