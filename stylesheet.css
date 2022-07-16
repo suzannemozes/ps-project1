@@ -257,6 +257,13 @@ h1 {
   /* display: inline-block; */
 }
 
+#dicea{
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 55px;
+}
+
 p {
   font: 2.5rem;
   color: black;
@@ -270,6 +277,15 @@ img {
   /* border: 2px solid red; */
 }
 
+.b-piece-area {
+  height: 40px;
+  border: 2px solid red;
+}
+
+.y-piece-area {
+  height: 40px;
+  border: 2px solid blue;
+}
 
 
 /* original attempt at 15x15 grid but css won't go around L-shapes */

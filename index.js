@@ -14,15 +14,18 @@ let dieWinner;
 //BUTTON
 const button = document.querySelector("button");
 
-// //DICE with with PNGS
+// dice with with .pngs
+// create opening scene with empty dice, and then a single dice roll to see who starts, and then onto both, const dicestartgame = src .. .dice0??
 const firstRandomNum = Math.floor((Math.random()*6) + 1);
 const firstDiceImage = 'assets/dice' + firstRandomNum + '.png';
-dice1 = document.querySelectorAll('img')[0].setAttribute('src', firstDiceImage);
+dice1 = document.querySelector('#dicea').setAttribute('src', firstDiceImage);
 const secondRandomNum = Math.floor((Math.random()*6) + 1);
 const secondDiceImage = 'assets/dice' + secondRandomNum + '.png';
-dice2 = document.querySelectorAll('img')[1].setAttribute('src', secondDiceImage);
+dice2 = document.querySelector('#diceb').setAttribute('src', secondDiceImage);
 
-// // visual movement of parcheesi pieces
+
+//parcheesi pieces
+
 // // use array.find callback to cycle through divs. Returns 1st matching value and only one value is returned.
 // // bluepath.find(bpath => {
 // //   return bluepath.includes('nextdiv');
