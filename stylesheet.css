@@ -253,9 +253,8 @@ h1 {
 }
 
 .dice-area {
-  margin: 0px 50px;
-  text-align: center;
-  display: inline-block;
+  /* text-align: center; */
+  /* display: inline-block; */
 }
 
 p {
@@ -264,9 +263,15 @@ p {
 }
 
 img {
-  width: 320px;
-  border: 2px solid red;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 55px;
+  /* border: 2px solid red; */
 }
+
+
+
 /* original attempt at 15x15 grid but css won't go around L-shapes */
 /* #container {
   display: grid;
