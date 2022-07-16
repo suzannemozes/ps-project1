@@ -7,60 +7,101 @@
   <title>PARCH</title>
   <script src="index.js"></script>
   <link rel="stylesheet" href="stylesheet.css">
+  <!-- <link rel="stylesheet" href="dicelibrary.css"> -->
 </head>
 
 
 <body>
+  <div class="wrapper">
+    <h1></h1>//leave empty to generate dynamically through js
+
+    <div class="dice-area">
+      <p>User 1</p>
+      <img />//leave empty to generate dynamically through js
+    </div>
+
+    <div class="dice-area">
+      <p>User 2</p>
+      <img />//leave empty to generate dynamically through js
+    </div>
+  </div>
   <div>
   <!-- <div class="heroimage"> -->
   <!-- <img src="images/board1.png" id="heroimage"></img> --> 
   <div id="container">
-    <div class="bluenest">BLUE NEST</div>
-    <div class="bluepath"></BLUE path>
-      <div class="path1box">path1</div>
-      <div class="path1box">path2</div>
-      <div class="path1box">path3</div>
-      <div class="path1box">path4</div>
-      <div class="path1box">path5</div>
-      <div class="path1box">path6</div>
+    <div class="bluenest" id="bluenest">BLUE NEST
+      <div id="bluehome" class="bluenest">bluehome </div>
+        <!-- <div class="bluenest" id="bp1"> bluepiece1 </div>
+        <div class="bluenest" id="bp2">bluepiece2</div> -->
+      </div>
+    <div class="bluepath">BLUEpath
+      <div id="div1">div1</div>
+      <div id="div2">div2</div>
+      <div id="div3">div3</div>
+      <div id="div4">div4</div>
+      <div id="div5">div5</div>
+      <div id="div6">div6</div>
     </div> 
-    <div class="safetyzone"></SAFETY>
-      <div class="sf">sf1</div>
-      <div class="sf">sf2</div>
-      <div class="sf">sf3</div>
-      <div class="sf">sf4</div>
-      <div class="sf">sf5</div>
-      <div class="sf">sf6</div>
+    <div class="safetyzone">SAFETY
+      <div id="div8">div8</div>
+      <div id="div9">div9</div>
+      <div id="div10">div10</div>
+      <div id="div11">div11</div>
+      <div id="div12">div12</div>
+      <div id="div13">div13</div>
     </div>
-    <div class="yellowpath"></YELLOW>
-        <div  class="path2box">path1</div>
-        <div  class="path2box">path2</div>
-        <div  class="path2box">path3</div>
-        <div  class="path2box">path4</div>
-        <div  class="path2box">path5</div>
-        <div  class="path2box">path6</div>
+    <div class="yellowpath">YELLOW Path
+        <div id="div14">div14</div>
+        <div id="div15">div15</div>
+        <div id="div16">div16</div>
+        <div id="div17">div17</div>
+        <div id="div18">div18</div>
+        <div id="div19">div19</div>
     </div>
-    <div class="yellownest">YELLOW NEST</div>
-
+    <div class="yellownest">YELLOW NEST
+        <!-- <div>yellowhome -->
+          <!-- <div id="yp1">yellowpiece1</div>
+          <div id="yp2">yellowpiece2</div> -->
+    </div>
     <!-- row2 -->
     <div></div>
-    <div class="bluepad">bluepad</div>
+    <div id="bluepad" class="bluepad">bluepad/div7</div>
     <div></div>
-    <div class="yellowpad">yellowpad</div>
+    <div id="bluepad" class="yellowpad">yellowpad</div>
     <div></div>
 
     <!-- row3 -->
     <div></div>
     <div></div>
-    <div class="home">home</div>
+    <div id="home"class="home">home</div>
     <div></div>
     <div></div>
 
     <!-- row4 -->
     <div></div>
     <div></div>
-    <div></div>
-    <div></div>
+    <div class="dicea">
+      <p style="font-size: 2em;">
+        <span class="dice dice-empty" title="Dice 0"></span>
+        <span class="dice dice-1" title="Dice 1"></span>
+        <span class="dice dice-2" title="Dice 2"></span>
+        <span class="dice dice-3" title="Dice 3"></span>
+        <span class="dice dice-4" title="Dice 4"></span>
+        <span class="dice dice-5" title="Dice 5"></span>
+        <span class="dice dice-6" title="Dice 6"></span>
+    </p>
+    </div>
+    <div class="diceb">
+      <p style="font-size: 2em;">
+        <span class="dice dice-empty" title="Dice 0"></span>
+        <span class="dice dice-1" title="Dice 1"></span>
+        <span class="dice dice-2" title="Dice 2"></span>
+        <span class="dice dice-3" title="Dice 3"></span>
+        <span class="dice dice-4" title="Dice 4"></span>
+        <span class="dice dice-5" title="Dice 5"></span>
+        <span class="dice dice-6" title="Dice 6"></span>
+    </p>
+    </div>
     <div></div>
     
   <!-- row5 -->
@@ -71,5 +112,6 @@
     <div class="peachnest">counter</div>
   </div>
 </div>
+<script src="index.js"></script>
 </body>
 </html>

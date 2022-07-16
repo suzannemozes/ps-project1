@@ -6,17 +6,32 @@ let player = 'Suzanne';
 let computer = 'Computer';
 let dieWinner;
 
+const bluepath = [div1, div2, div3, div4, div5, div6, div7, div8, div9, div10, div11, div12, div13, divhome];
+
 const diceA = ["1", "2", "3", "4", "5", "6"];//use these two arrays to loop to get die to visually show up on the screen
-const diceB = ["1", "2", "3", "4", "5", "6"]
+const diceB = ["1", "2", "3", "4", "5", "6"];
+
+//DICE with with PNGS
+const firstRandomNum = Math.floor(Math.random()*6) + 1;
+//concatenate to generate all dice images 1-6
+const firstDiceImage = 'images/assets/dice' + firstRandomNum + '.png';
+
+document.querySelectorAll('img')[0].setAttribute('src', firstDiceImage);
 
 // const dice = [ //this is an object with two arrays
 //   diceA = ["1", "2", "3", "4", "5", "6"];//use these two arrays to loop to get die to visually show up on the screen
 //   diceB = ["1", "2", "3", "4", "5", "6"]
 // ] 
 
+// visual movement of parcheesi pieces
+// use array.find callback to cycle through divs. Returns 1st matching value and only one value is returned.
+bluepath.find(bpath => {
+  return bluepath.includes('nextdiv');
+})
+
 ///
 function game(){ //LOGIC KEEP ALL PLAY INSIDE GAME FUNCTION WITH NESTED ARRAY / OBJECTS B/C BOTH NEED TO HAVE THE SAME REFERENCE TYPE AKA ROOT??
-
+ 
   function rollDie(){
     let dieWinner;
     let playerRoll = Math.floor((Math.random()*6)+1);

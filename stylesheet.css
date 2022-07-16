@@ -12,7 +12,7 @@
     "bluenest    bluepath        safetyzone     yellowpath        yellownest"
     ".           bluepad      .              yellowpad    . "
     ".           .            home           .            ."
-    ".           .            .              .            ."
+    ".           dicea            .          diceb            ."
     "rednest     .            .              .            peachnest";
   background-image: url("images/board1.png");
   height: 800px;
@@ -22,16 +22,33 @@
   /* background-size: cover; */
 }
 
-#container > .bluenest{
+#container > #bluenest{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  " a    b    c"
+  " .   bluehome    ."
+  " .    .    ."
   grid-area: bluenest;
   margin-top: 15px;
   margin-left: 15px;
+  /* align-content: center; */
+}
+
+#bluehome {
+  justify-items: center;
+}  
+
+#bluenest > #bluehome{
+  /* display: grid;
+  grid-area: bluehome; */
+  border: 5px solid red;
 }
 
 #container > .bluepath{
   grid-area: bluepath;
   margin-top: 15px;
-
 }
 
 #container > .safetyzone{
@@ -77,6 +94,36 @@
 #container > .bluepad{
   grid-area: bluepad;
   /* border: 5px solid black; */
+}
+
+#container > .dicea{
+  display: grid;
+  grid-area: dicea;
+  /* border: 2em solid red; */
+}
+
+#container > .diceb{
+  display: grid;
+  grid-area: diceb;
+  
+}
+
+.dicea{
+  display: grid;
+  grid-area: dicea;
+  /* border: 2em solid red; */
+  image: url(dice-0.dicelibrary.css));
+}
+
+.diceb{
+  display: grid;
+  grid-area: diceb;
+  /* border: 2em solid red; */
+}
+
+.dice-empty {
+  display: grid;
+  grid-area: dicea;
 }
 
 .bluenest {
@@ -135,7 +182,6 @@
 
 .bluepad {
   dislay: grid;
-
   grid-area: bluepad;
   /* background-color: orange; */
 }
@@ -146,13 +192,29 @@
   /* background-color: black; */
 }
 
-.path1box {
+#bp1 {
+  display: grid;
+  grid-area: bluenest;
 }
 
-.sf {
-  /* border: solid red; */
+#bp2 {
+  display: grid;
+  grid-area: bluenest;
 }
 
+#bluehome {
+  display: grid;
+  grid-area: bluenest;
+}
+/* 
+.yellowpiece {
+  display: grid;
+  gridarea: home;
+} */
+
+/* #div1, #div2, #div3, #div4, #div5, #div6, #divbluepad{
+  grid-area: bluepath;
+} */
 /* .heroimage {
   display: grid;
   background-image: url("images/board1.png");
@@ -164,13 +226,47 @@
   background-size: cover;
 } */
 
+/* #div8, #div9, #div10, #div11, #div12, #div13 {
+  grid-area: safetyzone;
+} */
+
+/* #div14, #div15, #div16, #div17, #div18, #div19, #divyellowpad{
+  grid-area: yellowpath;
+  border: 2px solid red;
+} */
 
 body {
   background-color: #A8A08D;
 
 }
 
+//dice
+.wrapper {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
 
+h1 {
+  margin: 20px;
+  font-size: 6rem;
+  color: black;
+}
+
+.dice-area {
+  margin: 0px 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+p {
+  font: 2.5rem;
+  color: black;
+}
+
+img {
+  width: 320px;
+}
 /* original attempt at 15x15 grid but css won't go around L-shapes */
 /* #container {
   display: grid;

@@ -56,4 +56,4 @@ See also the list of contributors[anchor link] who participated in this project.
 #### Acknowledgments  
 *List Hat tip to anyone whose code was used
 *Inspiration
-*etc.
+*Source Code for dice library: https://github.com/diafygi/dice-css Released under the MIT License.
