@@ -6,11 +6,12 @@ let player = 'Player1';
 let computer = 'Computer';
 let dieWinner;
 
-const bluePath = [div1, div2, div3, div4, div5, div6, div7, div8, div9, div10, div11, div12, div13, divhome];
-const yellowPath = [div15, div16, div17, div18, div19, div20, div7, div8, div9, div10, div11, div12, div14, divhome]
+// const bluePath = [div1, div2, div3, div4, div5, div6, div7, div8, div9, div10, div11, div12, div13, divhome];
+// const yellowPath = [div15, div16, div17, div18, div19, div20, div7, div8, div9, div10, div11, div12, div14, divhome]
 
 //BUTTON
 const button = document.querySelector("button");
+//OR CLICK ON THE DICE TO ROLL THEM
 
 // dice with with .pngs
 // create opening scene with empty dice, and then a single dice roll to see who starts, and then onto both, const dicestartgame = src .. .dice0??
@@ -20,7 +21,6 @@ dice1 = document.querySelector('#dicea').setAttribute('src', firstDiceImage);
 const secondRandomNum = Math.floor((Math.random()*6) + 1);
 const secondDiceImage = 'assets/dice' + secondRandomNum + '.png';
 dice2 = document.querySelector('#diceb').setAttribute('src', secondDiceImage);
-
 
 //parcheesi pieces
 const bluePiece = document.getElementById('#bluePiece');
@@ -74,6 +74,7 @@ function game(){ //LOGIC KEEP ALL PLAY INSIDE GAME FUNCTION WITH NESTED ARRAY / 
   //check for doubles
   function checkForDieMatch(){
     if(firstRandomNum === secondRandom) {
+      //player gets to take another turn immediately
       alert("you've rolled a double and that entitles you to do something")
     }
   }
@@ -117,3 +118,14 @@ game();
 //   //A piece only enters the ‘Home’ square by exact count. If you are 2 spaces from the ‘Home’ square and roll a 4 and 5, you cannot move that piece.
 //   //to win the game, be the first to move all your pieces to the center ‘Home’ square. 
 
+//check function syntax
+function rollAFive(){
+  if("firstRandomNum" || "secondRandomNum" || "firstRandomNum + secondRandomNum" === "5"){
+    //player moves piece out of nest to first tile
+  }
+}
+
+// //Die may be combined to move one piece, or may be used separately to move separate pieces, but you may not split a singular die into two moves.
+// function diceToMoves{
+//   if("firstRandomNum")
+// }

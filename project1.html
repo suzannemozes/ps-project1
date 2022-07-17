@@ -6,22 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PARCH</title>
   <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="dicelibrary.css">
+  <!-- <link rel="stylesheet" href="dicelibrary.css"> -->
 </head>
 
 
 <body>
   <div class="wrapper">
   <h1>parcheesini</h1>
-    <div class="invisible">
+    <div>
       <span><div>
         <p>Blue User</p>
-        <img id="bluePiece" class="playerpieces" src="images/darkbluepiece.svg">
+        <img class="bluePieces" class="playerPieces" src="images/darkbluepiece.svg">
         </div>
 
       <div>
         <p>Peach User</p>
-        <img id="peachPiece" class="p-piece-area" class="playerpieces" src="images/peachpiece.svg">
+        <img id="peachPiece" class="playerpieces" src="images/peachpiece.svg">
       </div>
       
       <div>
@@ -45,19 +45,31 @@
  <!-- gameboard divs -->
   <div id="container">
 
-    <div class="bluenest" id="bluenest">BLUENEST
-      <!-- <div id="bluehome" class="bluenest"> bluehome </div>
-        <div class="bluenest" id="bp1"> bluepiece1 </div>
-        <div class="bluenest" id="bp2"> bluepiece2 </div> -->
+    <div class="bluenest" class="blue" id="bluenest" class="bluepath">
+
+      <div>
+        <img id="bluePiece1" class="bluepieces" class="playerpieces" src="images/darkbluepiece.svg">
       </div>
 
+      <div>
+        <img id="bluePiece2" class="bluepieces" class="playerpieces" src="images/darkbluepiece.svg">
+     </div>
+
+     <div>
+        <img id="bluePiece3" class="bluepieces" class="playerpieces" src="images/darkbluepiece.svg">
+     </div>
+     <div>
+        <img id="bluePiece4" class="bluepieces" class="playerpieces" src="images/darkbluepiece.svg">
+      </div>
+    </div>
+
     <div class="bluepath">
-      <div id="div6">div6</div>
-      <div id="div5">div5</div>
-      <div id="div4">div4</div>
-      <div id="div3">div3</div>
-      <div id="div2">div2</div>
-      <div id="div1">div1</div>
+      <div class="blue" id="div5">div5</div>
+      <div class="blue" id="div4">div4</div>
+      <div class="blue" id="div3">div3</div>
+      <div class="blue" id="div2">div2</div>
+      <div class="blue" id="div1">div1</div>
+      <div class="blue" id="div0">div0</div>
       <!-- <div id="div8">div8</div>
       <div id="div9">div9</div>
       <div id="div10">div10</div>
@@ -69,39 +81,51 @@
     </div> 
 
     <div class="safetyzone">
-      <div id="div7">div7</div>
-      <div id="div8">div8</div>
-      <div id="div9">div9</div>
-      <div id="div10">div10</div>
-      <div id="div11">div11</div>
-      <div id="div12">div12</div>
+      <div class="blue" class="yellow" id="div7">div7</div>
+      <div class="blue" class="yellow" id="div8">div8</div>
+      <div class="blue" class="yellow" id="div9">div9</div>
+      <div class="blue" class="yellow" id="div10">div10</div>
+      <div class="blue" class="yellow" id="div11">div11</div>
+      <div class="blue" class="yellow" id="div12">div12</div>
     </div>
 
     <div class="yellowpath">
-      <div id="div20">div20</div>
-      <div id="div19">div19</div>
-      <div id="div18">div18</div>
-      <div id="div17">div17</div>
-      <div id="div16">div16</div>
-      <div id="div15">div15</div>
+      <div class="yellow" id="div20">div20</div>
+      <div class="yellow" id="div19">div19</div>
+      <div class="yellow" id="div18">div18</div>
+      <div class="yellow" id="div17">div17</div>
+      <div class="yellow" id="div16">div16</div>
+      <div class="yellow" id="div15">div15</div>
     </div>
 
-    <div class="yellownest">
-        <!-- <div>yellowhome -->
-          <!-- <div id="yp1">yellowpiece1</div>
-          <div id="yp2">yellowpiece2</div> -->
+    <div class="yellow" class="yellowpath" class="yellownest" id="yellownest">
+      
+      <div>
+        <img id="yellowPiece1" class="yellowpieces" class="yellowpieces" src="images/yellowpiece.svg">
+      </div>
+
+      <div>
+        <img id="yellowPiece2" class="yellowpieces" class="yellowpieces" src="images/yellowpiece.svg">
+     </div>
+
+     <div>
+        <img id="yellowPiece3" class="yellowpieces" class="yellowpieces" src="images/yellowpiece.svg">
+     </div>
+     <div>
+      <img id="yellowPiece4" class="yellowpieces" class="yellowpieces" src="images/yellowpiece.svg">
+      </div>
     </div>
     <!-- row2 -->
     <div></div>
-    <div id="div13" class="bluepad">div13</div>
+    <div id="div13" class="blue" class="bluepad/div13">div13</div>
     <div></div>
-    <div id="div14" class="yellowpad">div14</div>
+    <div id="div14" class="yellow" class="yellowpad">yellowpad/div14</div>
     <div></div>
 
     <!-- row3 -->
     <div></div>
     <div></div>
-    <div id="divhome"class="home">home</div>
+    <div id="divhome" class="blue" class="yellow" class="home">home</div>
     <div></div>
     <div></div>
 
@@ -121,12 +145,58 @@
     <div></div>
     
   <!-- row5 -->
-    <div class="rednest">PROMPTS</div>
+    <div id="rednest" class="red" class="redpath" class="rednest">
+      <div>
+        <img id="redPiece1" class="redpieces" class="redpieces" src="images/redpiece.svg">
+      </div>
+
+      <div>
+        <img id="redPiece2" class="redpieces" class="redpieces" src="images/redpiece.svg">
+      </div>
+
+      <div>
+        <img id="redPiece3" class="redpieces" class="redpieces" src="images/redpiece.svg">
+      </div>
+
+      <div>
+        <img id="redPiece4" class="redpieces" class="redpieces" src="images/redpiece.svg">
+      </div>
+
+    </div>
     <div></div>
     <div></div>
     <div></div>
-    <div class="peachnest">counter</div>
+    <div class="peach" id="peachnest" class="pathpath"class="peachnest">
+
+      <div>
+        <img id="peachPiece1" class="peachpieces" class="peachpieces" src="images/peachpiece.svg">
+      </div>
+
+      <div>
+        <img id="peachPiece2" class="peachpieces" class="peachpieces" src="images/peachpiece.svg">
+      </div>
+
+      <div>
+        <img id="peachPiece3" class="peachpieces" class="peachpieces" src="images/peachpiece.svg">
+      </div>
+      
+      <div>
+        <img id="peachPiece4" class="peachpieces" class="peachpieces" src="images/peachpiece.svg">
+      </div>
+
+    </div>
   </div>
+</div>
+
+<!-- text for alternating turns -->
+<div class="wrapper">
+<div class="blue-turn-next">
+  Blue's Turn
+</div>
+<p id="divider">|</p>
+<div class="yellow-turn-text">
+  Yellow's Turn
+</div>
 </div>
 
 <script src="index.js"></script>

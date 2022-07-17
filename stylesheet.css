@@ -1,9 +1,22 @@
 /* // two dice
 // two shaking cups?
-// // Each player positions their four single colored pieces in their respective starting nest,  which move to the colored section to the left of the nest
-// gameboard with a track around the outside, four corner spaces and four home paths leading to a central end space. The most popular Parcheesi boards in America have 68 spaces around the edge of the board, 12 of which are darkened safe spaces. Each corner of the board contains one player's nest, or starting area. 
-//two dice in center of screen that changes based on the numbers rolled with each turn? turns the color of the player */
+// // Each player positions their four single colored pieces in their respective starting nest,  which move to the colored section to the left of the nest 
+/*/
 
+div {
+  text-align: center;
+}
+
+p {
+
+}
+
+h1 {
+  margin: 20px;
+  font-size: 4rem;
+  color: black;
+  /* text-align: center; */
+}
 #container {
   display: grid;
   grid-template-columns: 310px 55px 67px 55px 310px;
@@ -24,20 +37,21 @@
 
 #container > #bluenest{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-  " a    b    c"
-  " .   bluehome    ."
-  " .    .    ."
+  " .     ."
+  " .     ."
+  " .     ."
   grid-area: bluenest;
   margin-top: 15px;
   margin-left: 15px;
+  text-align: center;
   /* align-content: center; */
 }
 
 #bluehome {
-  justify-items: center;
+  text-align: center;
 }  
 
 #bluenest > #bluehome{
@@ -61,10 +75,40 @@
   margin-top: 15px;
 }
 
+#container > #yellownest{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  " .     ."
+  " .     ."
+  " .     ."
+  grid-area: yellownest;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: center;
+  /* align-content: center; */
+}
+
 #container > .yellownest{
   grid-area: yellownest;
   margin-top: 15px;
   margin-right: 15px;
+}
+
+#container > #peachnest{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  " .     ."
+  " .     ."
+  " .     ."
+  grid-area: peachnest;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: center;
+  /* align-content: center; */
 }
 
 #container > .peachnest{
@@ -79,6 +123,21 @@
   margin-bottom: 15px;
   margin-left: 15px;
   /* background-color: black; */
+}
+
+#container > #rednest{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  " .     ."
+  " .     ."
+  " .     ."
+  grid-area: rednest;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: center;
+  /* align-content: center; */
 }
 
 #container > .home{
@@ -192,24 +251,17 @@
   /* background-color: black; */
 }
 
-#bluepiece {
+.bluePieces {
   display: grid;
   grid-area: bluenest;
+  height: 45px;
 }
 
 #bluehome {
   display: grid;
-  grid-area: bluenest;
+  grid-area: ;
 }
-/* 
-.yellowpiece {
-  display: grid;
-  gridarea: home;
-} */
 
-/* #div1, #div2, #div3, #div4, #div5, #div6, #divbluepad{
-  grid-area: bluepath;
-} */
 /* .heroimage {
   display: grid;
   background-image: url("images/board1.png");
@@ -219,15 +271,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} */
-
-/* #div8, #div9, #div10, #div11, #div12, #div13 {
-  grid-area: safetyzone;
-} */
-
-/* #div14, #div15, #div16, #div17, #div18, #div19, #divyellowpad{
-  grid-area: yellowpath;
-  border: 2px solid red;
 } */
 
 body {
@@ -240,12 +283,6 @@ body {
   margin: auto;
   text-align: center;
   display: inline-block;
-}
-
-h1 {
-  margin: 20px;
-  font-size: 6rem;
-  color: black;
 }
 
 .dice-area {
@@ -272,8 +309,6 @@ img {
   width: 55px;
   /* border: 2px solid red; */
 }
-
-/* player pieces */
 
 .invisible {
   display: none;
@@ -303,12 +338,39 @@ img {
   display: inline-block;
 }
 
-.playerpieces {
+.playerPieces {
   height: 45px;
   display: inline-block;
   text-align: center;
 }
 
+.yellow { 
+
+}
+
+.blue {
+
+}
+
+.peach {
+
+}
+
+.red {
+
+}
+
+.blue-turn-text{
+  color: blue;
+  text-align: center;
+  display: inline-block;
+}
+
+.yellow-turn-text{
+  color: grey;
+  text-align: center;
+  display: inline-block;
+}
 
 /* original attempt at 15x15 grid but css won't go around L-shapes */
 /* #container {
