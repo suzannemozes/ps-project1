@@ -55,5 +55,5 @@ See also the list of contributors[anchor link] who participated in this project.
 
 #### Acknowledgments  
 *List Hat tip to anyone whose code was used
-*Inspiration
+*Code League 7 for their .png library of dice images found https://drive.google.com/drive/folders/1qZjYUKwCtc_GRl5U9QSQZsFOjP0zVMUg youtube.com/codeleague7
 *Source Code for dice library: https://github.com/diafygi/dice-css Released under the MIT License.

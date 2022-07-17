@@ -192,12 +192,7 @@
   /* background-color: black; */
 }
 
-#bp1 {
-  display: grid;
-  grid-area: bluenest;
-}
-
-#bp2 {
+#bluepiece {
   display: grid;
   grid-area: bluenest;
 }
@@ -244,6 +239,7 @@ body {
   width: 70%;
   margin: auto;
   text-align: center;
+  display: inline-block;
 }
 
 h1 {
@@ -277,14 +273,40 @@ img {
   /* border: 2px solid red; */
 }
 
+/* player pieces */
+
+.invisible {
+  display: none;
+}
+
 .b-piece-area {
-  height: 40px;
-  border: 2px solid red;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
 }
 
 .y-piece-area {
-  height: 40px;
-  border: 2px solid blue;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.p-piece-area {
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.r-piece-area {
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.playerpieces {
+  height: 45px;
+  display: inline-block;
+  text-align: center;
 }
 
 

@@ -2,14 +2,12 @@
 // // Dice start at 00
 // // Let player pick color and computer takes other
 
-let player = 'Suzanne';
+let player = 'Player1';
 let computer = 'Computer';
 let dieWinner;
 
-// // const bluepath = [div1, div2, div3, div4, div5, div6, div7, div8, div9, div10, div11, div12, div13, divhome];
-
-// // const diceA = ["1", "2", "3", "4", "5", "6"];//use these two arrays to loop to get die to visually show up on the screen
-// // const diceB = ["1", "2", "3", "4", "5", "6"];
+const bluePath = [div1, div2, div3, div4, div5, div6, div7, div8, div9, div10, div11, div12, div13, divhome];
+const yellowPath = [div15, div16, div17, div18, div19, div20, div7, div8, div9, div10, div11, div12, div14, divhome]
 
 //BUTTON
 const button = document.querySelector("button");
@@ -25,7 +23,15 @@ dice2 = document.querySelector('#diceb').setAttribute('src', secondDiceImage);
 
 
 //parcheesi pieces
-
+const bluePiece = document.getElementById('#bluePiece');
+const peachPiece = document.getElementById('#peachPiece');
+const redPiece = document.getElementById('#redPiece');
+const yellowPiece = document.getElementById('#yellowPiece');
+const allPieces = document.getElementsByClassName('.playerpieces')
+// const bluePiece = document.querySelector('b-piece-area').setAttribute('src', darkbluepiece.svg)
+// const yellowPiece = document.querySelectory('y-piece-area').setAttribute('src', yellowpiece.svg)
+// const peachPiece = document.querySelectory('p-piece-area').setAttribute('src', peachpiece.svg)
+// const redPiece = document.querySelectory('r-piece-area').setAttribute('src', redpiece.svg)
 // // use array.find callback to cycle through divs. Returns 1st matching value and only one value is returned.
 // // bluepath.find(bpath => {
 // //   return bluepath.includes('nextdiv');
@@ -33,30 +39,44 @@ dice2 = document.querySelector('#diceb').setAttribute('src', secondDiceImage);
 
 // ///
 function game(){ //LOGIC KEEP ALL PLAY INSIDE GAME FUNCTION WITH NESTED ARRAY / OBJECTS B/C BOTH NEED TO HAVE THE SAME REFERENCE TYPE AKA ROOT??
+  function begin(){
+
+  }
  
-  function rollDie(){
+  function openingRollofDie(){
     let dieWinner;
     let playerRoll = Math.floor((Math.random()*6)+1);
     let computerRoll = Math.floor((Math.random()*6)+1);
     if (playerRoll < computerRoll){
       dieWinner = player;
-      console.log (`${player} rolls ${playerRoll}`+ " and " + `${computer} rolls ${computerRoll}. ${player} plays first.`);
+      console.log (`${player} rolls ${playerRoll}`+ " and " + `${computer} rolls ${computerRoll}. ${dieWinner} plays first.`);
     }
     else if (playerRoll > computerRoll) {
       dieWinner = computer;
-      console.log (`${player} rolls ${playerRoll}`+ " and " + `${computer} rolls ${computerRoll}. ${computer} plays first.`);
+      console.log (`${player} rolls ${playerRoll}`+ " and " + `${computer} rolls ${computerRoll}. ${dieWinner} plays first.`);
       }
     else {
       console.log (`${player} rolls ${playerRoll}`+ " and " + `${computer} rolls ${computerRoll}. We don't have a winner. Roll again, and let's see who goes first.`);
         //rollDie(); this code works but the automation is instant without letting the player interact //BUTTON THAT SAYS ROLL AGAIN?
     }
-    //ADD LOOP (SWITCH STATEMENT?) OF ARRAY diceA to reflect the actual visual image of the number rolled 
-    //playerRoll shows up on dice[A] and later on with both dice[A] and dice[b]
+
+
   }
-  
-  rollDie(player, computer);
-  
-  function throwDice(){//dieWinner rolls two dice //CSS shakes the cup
+  //call openingRollofDie
+  openingRollofDie(player, computer)
+
+  //roll of two dice with onclick of button
+  function shakeTwoDice(newRoll) {
+    const elem = document.getElementById('para');
+    elem.style.color = newRoll;
+    //dieWinner rolls two dice //CSS shakes the cup
+
+  //check for doubles
+  function checkForDieMatch(){
+    if(firstRandomNum === secondRandom) {
+      alert("you've rolled a double and that entitles you to do something")
+    }
+  }
 
 }}
 game();
