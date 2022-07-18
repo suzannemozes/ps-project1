@@ -3,20 +3,44 @@
 // // Each player positions their four single colored pieces in their respective starting nest,  which move to the colored section to the left of the nest 
 /*/
 
+@font-face {
+  font-family: 'QuentinCaps';
+  src: url('images/QuentinCaps.ttf');
+  /* font-family: 'CircusOrnate'; */
+  /* src: url('images/CircusOrnate.ttf') */
+}
+
+body {
+  background-color: #A8A08D;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 div {
   text-align: center;
 }
 
 p {
-
+  color: black;
 }
 
 h1 {
+  text align: center;
+  font-family: "QuentinCaps";
   margin: 20px;
-  font-size: 4rem;
+  font-size: 10rem;
   color: black;
   /* text-align: center; */
 }
+
+h2 {
+  font-family: "QuentinCaps";
+  margin: 10px;
+  font-size: 2rem;
+  color: black;
+  /* text-align: center; */
+}
+
 #container {
   display: grid;
   grid-template-columns: 310px 55px 67px 55px 310px;
@@ -42,7 +66,7 @@ h1 {
   grid-template-areas:
   " .     ."
   " .     ."
-  " .     ."
+  " .     .";
   grid-area: bluenest;
   margin-top: 15px;
   margin-left: 15px;
@@ -82,7 +106,7 @@ h1 {
   grid-template-areas:
   " .     ."
   " .     ."
-  " .     ."
+  " .     .";
   grid-area: yellownest;
   margin-top: 15px;
   margin-left: 15px;
@@ -103,7 +127,7 @@ h1 {
   grid-template-areas:
   " .     ."
   " .     ."
-  " .     ."
+  " .     .";
   grid-area: peachnest;
   margin-top: 15px;
   margin-left: 15px;
@@ -132,7 +156,7 @@ h1 {
   grid-template-areas:
   " .     ."
   " .     ."
-  " .     ."
+  " .     .";
   grid-area: rednest;
   margin-top: 15px;
   margin-left: 15px;
@@ -158,26 +182,27 @@ h1 {
 #container > .dicea{
   display: grid;
   grid-area: dicea;
-  /* border: 2em solid red; */
+  border: 2em solid red;
 }
 
 #container > .diceb{
   display: grid;
   grid-area: diceb;
+  border: 2em solid red;
   
 }
 
 .dicea{
   display: grid;
   grid-area: dicea;
-  /* border: 2em solid red; */
-  image: url(dice-0.dicelibrary.css));
+  border: 2em solid red;
+  image: url(image/dice-0.dicelibrary.css);
 }
 
 .diceb{
   display: grid;
   grid-area: diceb;
-  /* border: 2em solid red; */
+  border: 2em solid red;
 }
 
 .dice-empty {
@@ -240,7 +265,7 @@ h1 {
 }
 
 .bluepad {
-  dislay: grid;
+  display: grid;
   grid-area: bluepad;
   /* background-color: orange; */
 }
@@ -259,7 +284,7 @@ h1 {
 
 #bluehome {
   display: grid;
-  grid-area: ;
+  grid-area: home;
 }
 
 /* .heroimage {
@@ -273,9 +298,6 @@ h1 {
   background-size: cover;
 } */
 
-body {
-  background-color: #A8A08D;
-}
 
 /* //dice */
 .wrapper {
@@ -295,11 +317,6 @@ body {
   margin-left: 5px;
   margin-right: 5px;
   width: 55px;
-}
-
-p {
-  font: 2.5rem;
-  color: black;
 }
 
 img {
@@ -371,6 +388,24 @@ img {
   text-align: center;
   display: inline-block;
 }
+
+home.bluePiece {
+  background-color: purple;
+}
+
+home.yellowPiece {
+  background-color: purple; 
+}
+
+home.peachPiece {
+  background-color: purple; 
+}
+
+home.redPiece {
+  background-color: purple; 
+}
+
+/*for when a piece makes it home
 
 /* original attempt at 15x15 grid but css won't go around L-shapes */
 /* #container {

@@ -1,3 +1,7 @@
+//board game array
+// const board = [
+//   bluePiece4, null, null, null, null, null]
+
 // // Opening line to tell player to roll dice and the  player with the lowest roll goes first.
 // // Dice start at 00
 // // Let player pick color and computer takes other
@@ -23,10 +27,32 @@ const secondDiceImage = 'assets/dice' + secondRandomNum + '.png';
 dice2 = document.querySelector('#diceb').setAttribute('src', secondDiceImage);
 
 //parcheesi pieces
-const bluePiece = document.getElementById('#bluePiece');
-const peachPiece = document.getElementById('#peachPiece');
-const redPiece = document.getElementById('#redPiece');
-const yellowPiece = document.getElementById('#yellowPiece');
+const bluePiece1 = document.querySelector('#bluePiece1');
+const bluePiece2 = document.querySelector('#bluePiece2');
+const bluePiece3 = document.querySelector('#bluePiece3');
+const bluePiece4 = document.querySelector('#bluePiece4');
+
+const playerpieces = document.querySelector('.playerpieces');
+playerpieces.addEventListener('mouseover', function(){
+  document.getElementById("playerpieces").style.backgroundColor = "green";
+});
+
+
+const peachPiece1 = document.querySelector('#peachPiece1');
+const peachPiece2 = document.querySelector('#peachPiece2');
+const peachPiece3 = document.querySelector('#peachPiece3');
+const peachPiece4 = document.querySelector('#peachPiece4');
+
+const redPiece1 = document.querySelector('#redPiece1');
+const redPiece2 = document.querySelector('#redPiece2');
+const redPiece3 = document.querySelector('#redPiece3');
+const redPiece4 = document.querySelector('#redPiece4');
+
+const yellowPiece1 = document.querySelector('#yellowPiece1');
+const yellowPiece2 = document.querySelector('#yellowPiece2');
+const yellowPiece3 = document.querySelector('#yellowPiece3');
+const yellowPiece4 = document.querySelector('#yellowPiece4');
+
 const allPieces = document.getElementsByClassName('.playerpieces')
 // const bluePiece = document.querySelector('b-piece-area').setAttribute('src', darkbluepiece.svg)
 // const yellowPiece = document.querySelectory('y-piece-area').setAttribute('src', yellowpiece.svg)
