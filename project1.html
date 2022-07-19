@@ -12,17 +12,25 @@
 <body>
   <div>
   <div>
-    <h1 id="header1" style="font-size: 100px;">Parcheesini</h1>
-    <h2>... a teeny tiny version of Parcheesi ...</h2>
+    <h1 id="header1" style="font-size: 40px;">Parcheesini</h1>
+    <h2 style="font-size: 20px;"">... a teeny tiny version of Parcheesi ...</h2>
     <div id="instructions" style="display: none;"> Click one of your pieces to roll the dice!</div>
    </div>
-   <div id="current-player" style="display: none;"></div>
+
+   <!-- alternating turns -->
+  <div style="display: none">
+  <div class="blue-turn-next">
+    Blue's Turn
   </div>
-
-
-  <div class="wrapper">
-    <div>
-      <span><div>
+  <p id="divider">|</p>
+  <div class="yellow-turn-text">
+    Yellow's Turn
+  </div>
+  </div>
+   <div id="current-player" style="display: none;"></div>
+  <div>
+    <div style="display: none;">
+      <div>
         <p>Blue User</p>
         <img class="bluePieces" class="playerPieces" src="images/darkbluepiece.svg">
         </div>
@@ -51,9 +59,10 @@
   <div>
   
  <!-- gameboard divs -->
-  <div id="container">
+  <div class="centerBoard">
+    <div id="container">
 
-    <div class="bluenest" class="blue" id="bluenest" class="bluepath">
+    <div class="centerBoard" class="bluenest" class="blue" id="bluenest" class="bluepath">
 
       <div>
         <img id="bluePiece1" class="playerPieces" class="bluepieces" class="playerpieces" src="images/darkbluepiece.svg">
@@ -61,13 +70,14 @@
 
       <div>
         <img id="bluePiece2" class="playerPieces" class="bluepieces" class="playerpieces" src="images/darkbluepiece.svg">
-     </div>
+      </div>
 
-     <div>
+      <div>
         <img id="bluePiece3" class="playerPieces" class="bluepieces" class="playerpieces" src="images/darkbluepiece.svg">
-     </div>
-     <div>
-        <img id="bluePiece4" class="bluepieces" class="playerpieces" src="images/darkbluepiece.svg">
+      </div>
+
+      <div>
+        <img id="bluePiece4" class="bluepieces" class="playerpieces" class="playerPieces" src="images/darkbluepiece.svg">
       </div>
     </div>
 
@@ -89,12 +99,12 @@
     </div> 
 
     <div class="safetyzone">
+      <div class="blue" class="yellow" id="div6">div6</div>
       <div class="blue" class="yellow" id="div7">div7</div>
       <div class="blue" class="yellow" id="div8">div8</div>
       <div class="blue" class="yellow" id="div9">div9</div>
       <div class="blue" class="yellow" id="div10">div10</div>
       <div class="blue" class="yellow" id="div11">div11</div>
-      <div class="blue" class="yellow" id="div12">div12</div>
     </div>
 
     <div class="yellowpath">
@@ -106,7 +116,7 @@
       <div class="yellow" id="div15">div15</div>
     </div>
 
-    <div class="yellow" class="yellowpath" class="yellownest" id="yellownest">
+    <div class="centerBoard" class="yellow" class="yellowpath" class="yellownest" id="yellownest">
       
       <div>
         <img id="yellowPiece1" class="yellowpieces" class="yellowpieces" src="images/yellowpiece.svg">
@@ -125,7 +135,7 @@
     </div>
     <!-- row2 -->
     <div></div>
-    <div id="div13" class="blue" class="bluepad/div13">div13</div>
+    <div id="div12" class="blue" class="bluepad/div12">div13</div>
     <div></div>
     <div id="div14" class="yellow" class="yellowpad">yellowpad/div14</div>
     <div></div>
@@ -153,7 +163,7 @@
     <div></div>
     
   <!-- row5 -->
-    <div id="rednest" class="red" class="redpath" class="rednest">
+    <div class="centerBoard" id="rednest" class="red" class="redpath" class="rednest">
       <div>
         <img id="redPiece1" class="redpieces" class="redpieces" src="images/redpiece.svg">
       </div>
@@ -174,7 +184,7 @@
     <div></div>
     <div></div>
     <div></div>
-    <div class="peach" id="peachnest" class="pathpath"class="peachnest">
+    <div class="centerBoard" class="peach" id="peachnest" class="pathpath"class="peachnest">
 
       <div>
         <img id="peachPiece1" class="peachpieces" class="peachpieces" src="images/peachpiece.svg">
@@ -195,18 +205,10 @@
     </div>
   </div>
 </div>
-
-<!-- text for alternating turns -->
-<div class="wrapper">
-<div class="blue-turn-next">
-  Blue's Turn
-</div>
-<p id="divider">|</p>
-<div class="yellow-turn-text">
-  Yellow's Turn
-</div>
 </div>
 
+
+</div>
 <script src="index.js"></script>
 </body>
 </html>

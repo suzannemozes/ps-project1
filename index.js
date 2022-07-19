@@ -10,7 +10,19 @@ let player = 'Player1';
 let computer = 'Computer';
 let dieWinner;
 
-// const bluePath = [div1, div2, div3, div4, div5, div6, div7, div8, div9, div10, div11, div12, div13, divhome];
+// initialize arrays
+// let bluePiece1 = "bluePiece1"
+// let bluePiece2 = "bluePiece2"
+// let bluePiece3 = "bluePiece3"
+// let bluePiece4 = "bluePiece4"
+
+// bluePieces = [bluePiece1, bluePiece2, bluePiece3, bluePiece4];
+// yellowPieces = [yellowPiece1, yellowPiece2, yellowPiece3, yellowPiece4];
+// redPieces = [redPiece1, redPiece2, redPiece3, redPiece4];
+// peachPieces = [peachPiece1, peachPiece2, peachPiece3, peachPiece4];
+
+
+const bluePath = [bluenest, div0, div1, div2, div3, div4, div5, div7, div8, div9, div10, div11, div12, divhome];
 // const yellowPath = [div15, div16, div17, div18, div19, div20, div7, div8, div9, div10, div11, div12, div14, divhome]
 
 //BUTTON
@@ -54,6 +66,11 @@ const yellowPiece3 = document.querySelector('#yellowPiece3');
 const yellowPiece4 = document.querySelector('#yellowPiece4');
 
 const allPieces = document.getElementsByClassName('.playerpieces')
+
+let bluePieces = [bluePiece1, bluePiece2, bluePiece3, bluePiece4];
+let yellowPieces = [yellowPiece1, yellowPiece2, yellowPiece3, yellowPiece4];
+let redPieces = [redPiece1, redPiece2, redPiece3, redPiece4];
+let peachPieces = [peachPiece1, peachPiece2, peachPiece3, peachPiece4];
 // const bluePiece = document.querySelector('b-piece-area').setAttribute('src', darkbluepiece.svg)
 // const yellowPiece = document.querySelectory('y-piece-area').setAttribute('src', yellowpiece.svg)
 // const peachPiece = document.querySelectory('p-piece-area').setAttribute('src', peachpiece.svg)
