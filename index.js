@@ -81,6 +81,35 @@ let peachPieces = [peachPiece1, peachPiece2, peachPiece3, peachPiece4];
 // // })
 
 // ///
+//to update pieces on its own
+const pawns = {
+  nest: [],
+  onPath: [],
+  color: ["blue", "yellow", "red", "peach"],
+  id: "'1', '2', '3', '4'",
+  initializeBoard(){
+    const {color, id, nest} = this;
+    for(let id of ids) {
+      for (let color of colors){
+        nest.push ({
+          id,
+          color 
+        });
+
+      }
+    }
+    return nest;
+  },
+  drawPawn() {
+    const pawn = this.nest();
+    this.onPath.push(pawn);
+    return pawn;
+  }
+}
+
+
+
+
 function game(){ //LOGIC KEEP ALL PLAY INSIDE GAME FUNCTION WITH NESTED ARRAY / OBJECTS B/C BOTH NEED TO HAVE THE SAME REFERENCE TYPE AKA ROOT??
   function begin(){
 
@@ -172,3 +201,32 @@ function rollAFive(){
 // function diceToMoves{
 //   if("firstRandomNum")
 // }
+
+
+var blueplayerLocation = 0;
+var yellowplayerLocation = 0;
+
+const rollTwoDiceBlue= ()=>{
+  const dice = Math.floor(Math.random() * 6 + 1)
+  document.querySelector(`#div${blueplayerLocation}`).classList.remove("bluecircle");
+  blueplayerLocation += dice
+  console.log(blueplayerLocation)
+  if(blueplayerLocation >15){
+    alert('The player has won!')
+    return
+  }
+   document.querySelector(`#div${(blueplayerLocation)}`).classList.add("bluecircle");
+   rollTwoDiceYellow();
+}
+
+const rollTwoDiceYellow= ()=>{
+  const dice = Math.floor(Math.random() * 6 + 1)
+  document.querySelector(`#div${yellowplayerLocation}`).classList.remove("yellowcircle");
+  yellowplayerLocation += dice
+  console.log(yellowplayerLocation)
+  if(yellowplayerLocation >15){
+    alert('The computer has won!')
+    return
+  }
+   document.querySelector(`#div${(yellowplayerLocation)}`).classList.add("yellowcircle");
+}

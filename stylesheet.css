@@ -3,6 +3,7 @@
 // // Each player positions their four single colored pieces in their respective starting nest,  which move to the colored section to the left of the nest 
 /*/
 
+
 @font-face {
   font-family: 'QuentinCaps';
   src: url('images/QuentinCaps.ttf');
@@ -27,7 +28,7 @@ p {
 }
 
 h1 {
-  text align: center;
+  text-align: center;
   font-family: "QuentinCaps";
   margin: 20px;
   color: navy;
@@ -45,12 +46,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.centerPawn {
-  display: flex;
-  justify-content: last baseline;
-  align-items: flex-end;
 }
 
 #container {
@@ -76,11 +71,11 @@ h2 {
 
 #container > #bluenest{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
   " .     ."
-  " .     ."
+  " .     ."; */
   grid-area: bluenest;
   margin-top: 15px;
   margin-left: 15px;
@@ -115,11 +110,6 @@ h2 {
 
 #container > #yellownest{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-  " .     ."
-  " .     ."
   grid-area: yellownest;
   margin-top: 15px;
   margin-left: 15px;
@@ -135,12 +125,6 @@ h2 {
 
 #container > #peachnest{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-  " .     ."
-  " .     ."
-  " .     .";
   grid-area: peachnest;
   margin-top: 15px;
   margin-left: 15px;
@@ -164,12 +148,6 @@ h2 {
 
 #container > #rednest{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-  " .     ."
-  " .     ."
-  " .     .";
   grid-area: rednest;
   margin-top: 15px;
   margin-left: 15px;
@@ -209,7 +187,6 @@ h2 {
   display: grid;
   grid-area: dicea;
   border: 2em solid red;
-  image: url(image/dice-0.dicelibrary.css);
 }
 
 .diceb{
@@ -280,13 +257,13 @@ h2 {
 .bluepad {
   display: grid;
   grid-area: bluepad;
-  /* background-color: orange; */
+  background-color: orange;
 }
 
 .yellowpad {
   display: grid;
   grid-area: yellowpad;
-  /* background-color: black; */
+  background-color: black;
 }
 
 .bluePieces {
@@ -320,11 +297,6 @@ h2 {
   display: inline-block;
 }
 
-.dice-area {
-  /* text-align: center; */
-  /* display: inline-block; */
-}
-
 #dicea{
   margin-top: 10px;
   margin-left: 5px;
@@ -344,50 +316,10 @@ img {
   display: none;
 }
 
-.b-piece-area {
-  height: 30px;
-  text-align: center;
-  display: inline-block;
-}
-
-.y-piece-area {
-  height: 30px;
-  text-align: center;
-  display: inline-block;
-}
-
-.p-piece-area {
-  height: 30px;
-  text-align: center;
-  display: inline-block;
-}
-
-.r-piece-area {
-  height: 30px;
-  text-align: center;
-  display: inline-block;
-}
-
 .playerPieces {
   height: 45px;
   display: inline-block;
   text-align: center;
-}
-
-.yellow { 
-
-}
-
-.blue {
-
-}
-
-.peach {
-
-}
-
-.red {
-
 }
 
 .blue-turn-text{
@@ -402,20 +334,22 @@ img {
   display: inline-block;
 }
 
-home.bluePiece {
-  background-color: purple;
+.bluecircle{
+  margin: auto;
+  height: 25px;
+  width: 25px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-home.yellowPiece {
-  background-color: purple; 
-}
-
-home.peachPiece {
-  background-color: purple; 
-}
-
-home.redPiece {
-  background-color: purple; 
+.yellowcircle{
+  margin: auto;
+  height: 25px;
+  width: 25px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 /*for when a piece makes it home
