@@ -50,14 +50,27 @@ h2 {
 
 #container {
   display: grid;
-  grid-template-columns: 310px 55px 67px 55px 310px;
-  grid-template-rows: 310px 55px 67px 55px 310px; 
+  margin: 10px 10px 10px 10px;
+  grid-template-columns: 10px 60px 48px 48px 48px 48px 53px 49px 68px 55px 52px 50px 50px 49px 49px 49px 10px;
+  grid-template-rows: 10px 60px 48px 48px 48px 48px 53px 49px 68px 55px 52px 50px 50px 49px 49px 49px 10px;
   grid-template-areas:
-    "bluenest    bluepath        safetyzone     yellowpath        yellownest"
-    ".           bluepad      .              yellowpad    . "
-    ".           .            home           .            ."
-    ".           dicea            .          diceb            ."
-    "rednest     .            .              .            peachnest";
+  /* "bluenest bluenest bluenest bluenest bluenest bluenest                path       path           path      yellownest yellownest yellownest yellownest yellownest yellownest"
+  "bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
+  "bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
+  "bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
+  "bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
+  "bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
+  
+  "path     path      path    path     path     path        path           .          path      path       path        path       path       path       path"
+  "path     redsafety redsafety redsafety redsafety redsafety    .        home         .     yellowsafety yellowsafety yellowsafety yellowsafety yellowsafety path"
+  
+  "path     path      path    path     path     path        path              .       path        path       path       path       path       path       path"
+  
+  "rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"
+  "rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"
+  "rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"    "rednest rednest rednest rednest rednest rednest                    path       peachsafety     path            peachnest peachnest peachnest peachnest peachnest peachnest"
+  "rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"
+  "rednest rednest rednest rednest rednest rednest          path       path            path      peachnest peachnest peachnest peachnest peachnest peachnest"; */
   justify-content: space-evenly;
   background-image: url("images/board1.png");
   /* background-position: center center; */
@@ -351,44 +364,6 @@ img {
   border-radius: 50%;
   display: inline-block;
 }
-
-.redcircle{
-  margin: auto;
-  height: 25px;
-  width: 25px;
-  background-color: red;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.peachcircle{
-  margin: auto;
-  height: 25px;
-  width: 25px;
-  background-color: peachpuff;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-
-grid-template-areas:
-"bluenest bluenest bluenest bluenest bluenest bluenest    path       path           path      yellownest yellownest yellownest yellownest yellownest yellownest"
-"bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
-"bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
-"bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
-"bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
-"bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
-
-"path     path      path    path     path     path        path           .          path      path       path        path       path       path       path"
-"path     redsafety redsafety redsafety redsafety redsafety    .        home         .     yellowsafety yellowsafety yellowsafety yellowsafety yellowsafety path"
-
-"path     path      path    path     path     path        path              .       path        path       path       path       path       path       path"
-
-"rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"
-"rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"
-"rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"    "rednest rednest rednest rednest rednest rednest                    path       peachsafety     path            peachnest peachnest peachnest peachnest peachnest peachnest"
-"rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"
-"rednest rednest rednest rednest rednest rednest          path       path            path      peachnest peachnest peachnest peachnest peachnest peachnest";
 
 /*for when a piece makes it home
 
