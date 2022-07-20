@@ -6,19 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PARCHEESINI</title>
   <link rel="stylesheet" href="stylesheetb.css">
-  <!-- <link rel="stylesheet" href="dicelibrary.css"> -->
 </head>
 <body>
-  <div>
-  <div>
-    <h1 id="header1" style="font-size: 40px;">Parcheesini</h1>
+  <p>
+    <h1 id="header1" style="font-size: 50px;">Parcheesini</h1>
     <h2 style="font-size: 20px;">... a teeny tiny version of Parcheesi ...</h2>
-    <div id="instructions" style="display: none";"> Click one of your pieces to roll the dice!</div>
-   </div>
-   <p id="rolldice">sometexthere</p>
-   <button onclick="rollTwoDiceBlue()">ROLL DICE</button>
- </div></span>
-<div>
+   <p id="text">sometexthere</p>
+   <div>
+    <button onclick="rollTwoDiceBlue()">ROLL DICE</button><br>
+   <p>What's your name?</p>
+   <input id="instructions"></input></div>
  
  <!-- gameboard divs -->
   <div class="centerBoard">
@@ -188,6 +185,7 @@
       </div>
       <div id="div63"></div>
       <div>
+          <!-- <img class:"dice-area" id="blankdice"> -->
           <img id="diceb" class="dice-area" />
          </div>
       <div></div>

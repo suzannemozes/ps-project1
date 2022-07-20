@@ -22,11 +22,13 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
+  
   /* background-position: center center; */
 }
 
 p {
   color: black;
+  text-align: center;
 }
 
 h1 {
@@ -41,7 +43,13 @@ h2 {
   font-family: "QuentinCaps";
   margin: 10px;
   color: black;
-  /* text-align: center; */
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  align-items: center;
+
 }
 
 .centerBoard {

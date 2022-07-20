@@ -67,7 +67,29 @@ const pawns = {
 
 
 
-function game(){ //LOGIC KEEP ALL PLAY INSIDE GAME FUNCTION WITH NESTED ARRAY / OBJECTS B/C BOTH NEED TO HAVE THE SAME REFERENCE TYPE AKA ROOT??
+function game(){
+
+  
+  openingRollofDie = () => {
+    let dieWinner;
+    let playerRoll = Math.floor((Math.random()*6)+1);
+    let computerRoll = Math.floor((Math.random()*6)+1);
+    console.log(dice1, dice2);
+    if (playerRoll < computerRoll){
+      dieWinner = player;
+      console.log(`${player} rolls ${playerRoll}`+ " and " + `${computer} rolls ${computerRoll}. ${dieWinner} plays first.`);
+    }
+    else if (playerRoll > computerRoll) {
+      dieWinner = computer;
+      console.log(`${player} rolls ${playerRoll}`+ " and " + `${computer} rolls ${computerRoll}. ${dieWinner} plays first.`);
+      }
+    else {
+      console.log(`${player} rolls ${playerRoll}`+ " and " + `${computer} rolls ${computerRoll}. We don't have a winner. Roll again, and let's see who goes first.`);
+        //rollDie(); this code works but the automation is instant without letting the player interact //BUTTON THAT SAYS ROLL AGAIN?
+    }
+
+
+  }
   function begin(){
 
   }
@@ -151,9 +173,11 @@ game();
 //check function syntax
 function rollAFive(){
   if("firstRandomNum" || "secondRandomNum" || "firstRandomNum + secondRandomNum" === "5"){
-    //player moves piece out of nest to first tile
+    rollTwoDiceBlue()
   }
 }
+
+
 
 // //Die may be combined to move one piece, or may be used separately to move separate pieces, but you may not split a singular die into two moves.
 // function diceToMoves{
@@ -165,8 +189,7 @@ var blueplayerLocation = 0;
 var yellowplayerLocation = 58;
 
 const rollTwoDiceBlue= ()=>{
-  const dice = firstRandomNum;
-  let firstDiceImage = firstRandomNum;
+  const dice = firstRandomNum + secondRandomNum;
   document.querySelector(`#div${(blueplayerLocation)}`).classList.remove("bluecircle");
   blueplayerLocation += dice
   console.log(blueplayerLocation)
@@ -178,9 +201,9 @@ const rollTwoDiceBlue= ()=>{
    rollTwoDiceYellow();
 }
 
+
 const rollTwoDiceYellow= ()=>{
   const dice = secondRandomNum;
-  let secondDiceImage = secondRandomNum;
   document.querySelector(`#div${(yellowplayerLocation)}`).classList.remove("yellowcircle");
   yellowplayerLocation -= dice
   console.log(yellowplayerLocation)
