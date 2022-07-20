@@ -1,8 +1,8 @@
-## README FILE: Template  
+## README FILE: Parcheesini  
 
 ### Description  
-* What your project is / should be used for
-* What problem(s) your project solves
+* This is a basic dice rolling game that moves pieces around the board. The game this was initially based off of helped the author learn math at an early age and has remained dear to her heart. 
+* With intended future plans, this game will be accessible for free for school children to learn basic mathematics. 
 
 ### Brief Example  
 * This could be a code snippet showing how your project shoudl be used (if it is menat to be integrated into another app)  
@@ -10,25 +10,17 @@
 
 ### List of Features / User Stories 
 * Typically a short list of the features / user stories that you planned during the development phase of the project
-* To provide more detail, you can show how you categorized these features into Bronze, Silver and gold Levels and indicate which features you complete / have yet to complete
 
 
 ### List of Technologies  
-* Often you will want to list the technologies you used to create the project
-* This typically would consist of of all primary languages, frameworks, and libraries your app is composed of
-* This is particularly important when it comes to recruiters scanning your projects for keywords
+* Javascript, HTML, CSS
 
 ### Installation Instructions / Getting Started  
 * This section should walk a reader step by step,
 > EXAMPLE:
 > * Fork and clone this repository to your machine
-> * Change int othe new directory
-> * Run npm install: 
-> image of code 
-
-
-* ... process of forking, cloning, and starting the app locally
-
+> * Change into a new directory
+> * Run npm install 
 
 ### Future plans for NAMEOFAPPTK:  
 PARAGRAPHS OF TEXT

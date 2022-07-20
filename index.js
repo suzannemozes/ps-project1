@@ -162,15 +162,15 @@ function rollAFive(){
 
 
 var blueplayerLocation = 0;
-var yellowplayerLocation = 0;
+var yellowplayerLocation = 58;
 
 const rollTwoDiceBlue= ()=>{
   const dice = firstRandomNum;
   let firstDiceImage = firstRandomNum;
-  document.querySelector(`#div${blueplayerLocation}`).classList.remove("bluecircle");
+  document.querySelector(`#div${(blueplayerLocation)}`).classList.remove("bluecircle");
   blueplayerLocation += dice
   console.log(blueplayerLocation)
-  if(blueplayerLocation > 40){
+  if(blueplayerLocation > 28){
     alert('The player has won!')
     return
   }
@@ -181,10 +181,10 @@ const rollTwoDiceBlue= ()=>{
 const rollTwoDiceYellow= ()=>{
   const dice = secondRandomNum;
   let secondDiceImage = secondRandomNum;
-  document.querySelector(`#div${yellowplayerLocation}`).classList.remove("yellowcircle");
-  yellowplayerLocation += dice
+  document.querySelector(`#div${(yellowplayerLocation)}`).classList.remove("yellowcircle");
+  yellowplayerLocation -= dice
   console.log(yellowplayerLocation)
-  if(yellowplayerLocation >40){
+  if(yellowplayerLocation < 30){
     alert('The computer has won!')
     return
   }

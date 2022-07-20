@@ -19,7 +19,9 @@ body {
 }
 
 div {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* background-position: center center; */
 }
 
@@ -53,7 +55,7 @@ h2 {
   margin: 10px 10px 10px 10px;
   grid-template-columns: 10px 60px 48px 48px 48px 48px 53px 49px 68px 55px 52px 50px 50px 49px 49px 49px 10px;
   grid-template-rows: 10px 60px 48px 48px 48px 48px 53px 49px 68px 55px 52px 50px 50px 49px 49px 49px 10px;
-  grid-template-areas:
+  /* grid-template-areas: */
   /* "bluenest bluenest bluenest bluenest bluenest bluenest                path       path           path      yellownest yellownest yellownest yellownest yellownest yellownest"
   "bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
   "bluenest bluenest bluenest bluenest bluenest bluenest    path       bluesafety     path      yellownest yellownest yellownest yellownest yellownest yellownest"
@@ -72,7 +74,7 @@ h2 {
   "rednest rednest rednest rednest rednest rednest          path       peachsafety     path      peachnest peachnest peachnest peachnest peachnest peachnest"
   "rednest rednest rednest rednest rednest rednest          path       path            path      peachnest peachnest peachnest peachnest peachnest peachnest"; */
   justify-content: space-evenly;
-  background-image: url("images/board1.png");
+  background-image: url("images/board2.png");
   /* background-position: center center; */
   height: 800px;
   width: 800px;
